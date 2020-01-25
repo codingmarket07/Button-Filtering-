@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+	background: #f7f8fc;
+	color: #555555;
+}
+
+.wrapper{
+	width: 1200px;
+	margin: 50px auto;
+}
+
+.button_grp ul{
+	display: flex;
+}
+
+.button_grp ul li{
+	background: #fff;
+	margin: 10px;
+	padding: 10px 15px;
+	min-width: 80px;
+	text-align: center;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.125);
+}
+
+.button_grp ul li.active,
+.button_grp ul li:hover{
+	background: #0000fe;
+	color: #fff;
+}
+
+.item_grp{
+	margin-top: 50px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.item_grp .item{
+	width: 125px;
+	height: auto;
+	background: #fff;
+	margin: 10px;
+	border-radius: 5px;
+	padding: 15px;
+	text-align: center;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.125);
+}
+
+.item_grp .item .icon_wrp{
+	display: flex;
+	align-items: center;
+	height: 85px;
+}
+
+.item_grp .item .icon{
+	background: url('filter_image.png') no-repeat 0 0;
+	width: 64px;
+	height: 52px;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.item_grp .item.folders .icon{
+	background-position: 0 0;
+	width: 64px;
+	height: 52px;
+}
+
+.item_grp .item.files .icon{
+	background-position: 0 -66px;
+	width: 48px;
+	height: 64px;
+}
+
+.item_grp .item.images .icon{
+	background-position: 0 -146px;
+	width: 64px;
+	height: 50px;
+}
+
+.item_grp .item.sheets .icon{
+	background-position: 0 -210px;
+	width: 64px;
+	height: 60px;
+}
+
+.item_grp .item.pdfs .icon{
+	background-position: 0 -282px;
+	width: 56px;
+	height: 64px;
+}
+
+.item_grp .item.documents .icon{
+	background-position: 0 -363px;
+	width: 64px;
+	height: 62px;
+}
+
